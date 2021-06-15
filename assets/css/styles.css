@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Lato&display=swap");
+
+:root {
+    --base-color: 0, 38, 71;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    background: fixed no-repeat
+        linear-gradient(
+            rgba(var(--base-color), 0.8) 0%,
+            rgba(var(--base-color), 0.4) 100%
+        );
+    color: azure;
+    font-family: "Nunito Sans", "Lato", sans-serif;
+}
+
+header {
+    width: 100%;
+    margin-top: 1.15rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: azure;
+    margin: 0.8rem 1rem;
+    max-width: 100%;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.projects .card {
+    border: 0.8rem solid azure;
+    border-radius: 1rem;
+    width: fit-content;
+    margin: 1rem;
+}
+
+.contact-form {
+    margin: 0 auto;
+    width: 75vw;
+}
+
+.contact-form > input,
+.contact-form > textarea {
+    width: 100%;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 10rem;
+}
+
+footer {
+    display: block;
+    margin: 0.8rem;
+    width: 100%;
+    bottom: 1.5rem;
+    text-align: center;
+}
