@@ -2,12 +2,17 @@
 
 :root {
     --base-color: 0, 38, 71;
+    --alt-color: 240, 255, 255;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,8 +27,15 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(
+        rgba(var(--base-color), 0.8) 0%,
+        rgba(var(--base-color), 0.4) 100%
+    );
     width: 100%;
-    margin-top: 1.15rem;
+
+    margin-bottom: 1.15rem;
     text-align: center;
 }
 
@@ -34,10 +46,17 @@ nav {
 }
 
 nav a {
+    flex: 1 0 0;
     text-decoration: none;
     color: azure;
     margin: 0.8rem 1rem;
     max-width: 100%;
+    border-bottom: 0.2rem solid transparent;
+    border-bottom: 0.2rem solid rgba(0, 0, 0, 0);
+}
+
+nav a:hover {
+    border-bottom: 0.2rem solid rgb(240, 255, 255, 1);
 }
 
 section {
@@ -57,10 +76,13 @@ section h2 {
 }
 
 .projects .card {
-    border: 0.8rem solid azure;
-    border-radius: 1rem;
-    width: fit-content;
     margin: 1rem;
+}
+
+.projects .card img {
+    border: 0.3rem solid azure;
+    border-radius: 0.8rem;
+    width: 100%;
 }
 
 .contact-form {
@@ -79,9 +101,15 @@ section h2 {
 }
 
 footer {
-    display: block;
-    margin: 0.8rem;
+    position: sticky;
+    background: linear-gradient(
+        rgba(var(--base-color), 0.5),
+        rgba(var(--base-color), 1)
+    );
     width: 100%;
-    bottom: 1.5rem;
+    padding-top: 0.3rem;
+    margin-top: 0.8rem;
+    height: 7vh;
+    bottom: 0rem;
     text-align: center;
 }
