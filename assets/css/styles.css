@@ -24,19 +24,21 @@ body {
         );
     color: azure;
     font-family: "Nunito Sans", "Lato", sans-serif;
+    font-size: 20px;
 }
 
 header {
     position: sticky;
     top: 0;
     background: linear-gradient(
-        rgba(var(--base-color), 0.8) 0%,
-        rgba(var(--base-color), 0.4) 100%
+        rgba(var(--base-color), 0.9) 0%,
+        rgba(var(--base-color), 0.6) 100%
     );
     width: 100%;
 
     margin-bottom: 1.15rem;
     text-align: center;
+    z-index: 2;
 }
 
 nav {
@@ -68,6 +70,24 @@ section h2 {
     text-align: center;
 }
 
+.about-me {
+    text-align: center;
+    margin: 2rem 0.5rem;
+}
+
+.about-me img {
+    max-width: 10vw;
+    margin: 1.5rem;
+    border-radius: 50%;
+}
+
+.about-me p {
+    font-size: 1.25rem;
+    text-align: left;
+    max-width: 75vw;
+    margin: 0 auto;
+}
+
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -79,10 +99,24 @@ section h2 {
     margin: 1rem;
 }
 
+.projects .card img:hover {
+    background-color: rgb(var(--base-color));
+    opacity: 0.5;
+}
+
 .projects .card img {
     border: 0.3rem solid azure;
     border-radius: 0.8rem;
     width: 100%;
+}
+
+.projects .card a {
+    text-decoration: underline;
+    color: azure;
+}
+
+.projects .card a:hover {
+    text-decoration-color: rgb(var(--base-color));
 }
 
 .contact-form {
@@ -93,11 +127,20 @@ section h2 {
 .contact-form > input,
 .contact-form > textarea {
     width: 100%;
+    line-height: 2rem;
+    margin: 0.5rem 0;
 }
 
 .contact-form textarea {
     resize: none;
-    height: 10rem;
+    height: 8rem;
+}
+
+.contact-form input[type="submit"] {
+    background-color: rgb(var(--base-color));
+    color: azure;
+    padding: 0.75rem;
+    font-size: 1.5rem;
 }
 
 footer {
@@ -112,4 +155,12 @@ footer {
     height: 7vh;
     bottom: 0rem;
     text-align: center;
+}
+
+@media screen and (max-width: 430px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+    }
 }

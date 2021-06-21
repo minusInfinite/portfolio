@@ -4,13 +4,15 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <title>Porfolio - Ashley Mann</title>
     </head>
     <body>
         <header>
-            <h1>Porfolio</h1>
+            <h1>Porfolio - Ashley Mann</h1>
             <nav>
+                <a href="#about-me">About Me</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
                 <a href="https://github.com/minusInfinite" target="_blank"
@@ -19,16 +21,47 @@
             </nav>
         </header>
         <main>
+            <section id="about-me">
+                <h2>About Me</h2>
+                <div class="about-me">
+                    <img
+                        class=".avatar"
+                        src="./assets/images/avatar_blue_2021.png"
+                    />
+                    <p>
+                        Hi, My name is Ashley, also known as minusInfinite. I've
+                        had a fair long history of creating interactive
+                        experience but haven't been able to find the time. My
+                        previous experience was mostly around the use of a
+                        software programme called Flash. It allowed for making
+                        animations and interactions that could be used to build
+                        really interesting websites. Unfortunately, my career
+                        took a more methodical turn and all the fun and time
+                        tinkering with webpage and web technology felt like a
+                        misuse of my free time.
+                    </p>
+                    <br />
+                    <p>All that said, we'll call this a personal renaissance</p>
+                </div>
+            </section>
             <section id="projects">
                 <h2>Projects</h2>
                 <div class="projects">
                     <div class="card">
                         <figure>
-                            <img
-                                src="https://via.placeholder.com/350"
-                                alt="placeholder img w/350"
-                            />
-                            <figcaption>Project 1</figcaption>
+                            <a
+                                href="https://minusinfinite.github.io/Horiseon-Refactor/"
+                                ><img
+                                    src="./assets/images/project-refactor.png"
+                                    alt="Refactor Project Image"
+                            /></a>
+                            <figcaption>
+                                Customer Website Refactor -
+                                <a
+                                    href="https://github.com/minusInfinite/Horiseon-Refactor"
+                                    >Github</a
+                                >
+                            </figcaption>
                         </figure>
                     </div>
                     <div class="card">
@@ -67,19 +100,10 @@
                             <figcaption>Project 5</figcaption>
                         </figure>
                     </div>
-                    <div class="card">
-                        <figure>
-                            <img
-                                src="https://via.placeholder.com/350"
-                                alt="placeholder img w/350"
-                            />
-                            <figcaption>Project 6</figcaption>
-                        </figure>
-                    </div>
                 </div>
             </section>
             <section id="contact">
-                <h2>Contact</h2>
+                <h2>Contact Me</h2>
                 <form class="contact-form">
                     <label for="email"> Email Address </label>
                     <input
